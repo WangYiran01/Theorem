@@ -1,0 +1,200 @@
+-- This module serves as the root of the `Theorem` library.
+-- Import modules here that should be built as part of the library.
+-- import «Theorem».Basic
+import Theorem.Basic
+
+-- 自写定理所在位置
+
+import Theorem.Basic
+import Theorem.mini_separate.succ_mul_choose_eq'
+import Theorem.mini_separate.one_div_two_mul_choose_sub_succ_mul_choose
+import Theorem.mini_separate.succ_mul_choose_eq''
+import Theorem.IDT_1to100.IDT_51to60.idt_57
+import Theorem.IDT_1to100.IDT_71to80.idt_71
+import Theorem.IDT_1to100.IDT_11to20.idt_12
+import Theorem.IDT_1to100.IDT_41to50.idt_49
+import Theorem.IDT_1to100.IDT_41to50.idt_46
+import Theorem.IDT_1to100.IDT_1to10.idt_8
+import Theorem.IDT_1to100.IDT_1to10.idt_2
+import Theorem.IDT_1to100.IDT_1to10.idt_3
+import Theorem.IDT_1to100.IDT_1to10.idt_9
+import Theorem.IDT_1to100.IDT_1to10.idt_7
+import Theorem.IDT_1to100.IDT_1to10.idt_6
+import Theorem.IDT_1to100.IDT_1to10.idt_5
+import Theorem.IDT_1to100.IDT_1to10.idt_4
+import Theorem.IDT_1to100.IDT_1to10.idt_1
+import Theorem.IDT_101to200.IDT_161to170.idt_168
+
+import Theorem.example_separate.sum_eq_mul_mul_add_pow
+import Theorem.example_separate.sum_neg_cancel
+import Theorem.example_separate.sum_eq_two
+import Theorem.example_separate.choose_even_odd
+import Theorem.example_separate.two_mod_two_pow
+import Theorem.example_separate.two_pow_eq_two_pow_sub_add
+import Theorem.example_separate.mul_two_div_mul
+import Theorem.example_separate.sum_neg_pow_mul
+import Theorem.example_separate.ico_choose_eq_two_pow
+import Theorem.example_separate.inv_2m_add
+import Theorem.example_separate.congr_Ico_succ
+
+import Theorem.example_separate.alternating_sum_mul_mul_choose
+import Theorem.example_separate.range_sub_choose_add_sum
+import Theorem.example_separate.choose_mul_pow_eq_mul
+import Theorem.example_separate.sum_choose_eq_Ico
+import Theorem.example_separate.Ico_odd_div_choose
+
+import Theorem.example_separate.Ico_choose_add_eq_mul_pred
+import Theorem.example_separate.two_mul_sum
+import Theorem.example_separate.Ico_pow_mul_choose
+import Theorem.example_separate.sum_add_eq_add
+import Theorem.example_separate.choose_mul_eq_mul_sub_div
+import Theorem.example_separate.sum_mul_congr
+import Theorem.example_separate.sum_neg_comm
+import Theorem.example_separate.sum_range_succ_eq_sum_range
+import Theorem.example_separate.sum_choose_eq_pow_add
+import Theorem.example_separate.two_pow_eq_two_pow_two
+import Theorem.example_separate.pred_Ico_choose_eq_pred_pow
+import Theorem.example_separate.Ico_succ_mul_choose_eq
+import Theorem.example_separate.add_two_subY
+import Theorem.example_separate.alternating_sum_choose_mul
+import Theorem.example_separate.pow_neg_succ_succ
+import Theorem.example_separate.sum_mul_choose_eq_mul_choose
+import Theorem.example_separate.sub_two_add_one
+import Theorem.example_separate.Ico_choose
+import Theorem.example_separate.mul_mul_div_succ_mul_choose
+import Theorem.example_separate.neg_pow_div_choose
+import Theorem.example_separate.mul_sum_choose_sub_choose
+import Theorem.example_separate.range_choose_eq_ico_choose
+import Theorem.example_separate.neg_pow_mul_div_mul
+import Theorem.example_separate.add_neg_div
+import Theorem.example_separate.choose_add_div_distrib
+import Theorem.example_separate.two_pow_div_two
+import Theorem.example_separate.odd_choose
+import Theorem.example_separate.lt_eq_le_sub
+import Theorem.example_separate.sum_add_eq_two_pow
+import Theorem.example_separate.sum_choose_sub_eq_add
+import Theorem.example_separate.choose_mul_add_pow
+import Theorem.example_separate.sum_range_choose_halfway_of_lt
+import Theorem.example_separate.Ico_choose_eq_Ico_choose_add
+import Theorem.example_separate.pow_eq_sub_one_mul
+import Theorem.example_separate.choose_eq_pow_add
+import Theorem.example_separate.two_mul_sub
+import Theorem.example_separate.Ico_simpn
+import Theorem.example_separate.two_even_congr
+import Theorem.example_separate.add_two_sub
+import Theorem.example_separate.pow_mul_choose
+import Theorem.example_separate.sum_Ico_choose_mul
+import Theorem.example_separate.mul_sum_choose
+import Theorem.example_separate.mul_two_pow_eq_mul_mul_two_pow
+import Theorem.example_separate.sum_neg_pow_mul_mul
+import Theorem.example_separate.choose_mul_eq_mul_sub
+import Theorem.example_separate.mul_mul_div_succ_mul_choose_eq
+import Theorem.example_separate.sum_succ_choose
+import Theorem.example_separate.sum_neg_pow_mul_eq_sum_distrib
+import Theorem.example_separate.mul_two_pow_add_eq_mul_pow
+import Theorem.example_separate.two_mul_succ_sub
+import Theorem.example_separate.sum_neg_pow_mul_add
+import Theorem.example_separate.ico_mul_choose_sub
+import Theorem.example_separate.choose_mul_eq_mul_sub'
+import Theorem.example_separate.sum_Ico_reflect_two
+import Theorem.example_separate.mul_mul_div_succ_mul_choose_eq_succ
+import Theorem.example_separate.Ico_pow_choose_eq_mul_pow
+import Theorem.example_separate.two_pow_eq_range_add_ico
+import Theorem.example_separate.sub_add_eq_add
+import Theorem.example_separate.choose_eq_choose_add
+import Theorem.example_separate.sum_mul_choose_eq_mul_two_pow_sub
+import Theorem.example_separate.two_mul_div_add
+import Theorem.example_separate.add_div_two
+import Theorem.example_separate.div_mul_Ico_eq_zero
+import Theorem.example_separate.bot_sum_mul_congr
+import Theorem.example_separate.range_eq_ico_mul_choose
+import Theorem.example_separate.sum_two_pow_mul_choose
+import Theorem.example_separate.Ico_pow_choose
+import Theorem.example_separate.sum_mul_choose_eq_pow_mul_sub
+import Theorem.example_separate.Real_choose_eq_choose_add
+import Theorem.example_separate.sum_sub_sum_add
+import Theorem.example_separate.two_congr
+import Theorem.example_separate.h_pow_zero_mul_add
+import Theorem.example_separate.sum_neg_pow_mul_mul_choose
+import Theorem.example_separate.sum_neg_pow_mul_distrib
+import Theorem.example_separate.add_div_two_eq_distrib
+import Theorem.example_separate.sum_neg_pow_div_congr
+import Theorem.example_separate.sum_assoc
+import Theorem.example_separate.sum_neg_assoc
+import Theorem.example_separate.pow_zero_mul_add_sum
+import Theorem.example_separate.mul_same
+import Theorem.example_separate.range_mul_add
+import Theorem.example_separate.Ico_mul_add
+import Theorem.example_separate.ico_succ
+import Theorem.example_separate.sum_mul_add_distrib
+import Theorem.example_separate.Ico_div
+import Theorem.example_separate.mul_choose_two_pow
+import Theorem.example_separate.range_sub_choose
+import Theorem.example_separate.Ico_neg_eq_succ
+import Theorem.example_separate.odd_sum_range_choose
+import Theorem.example_separate.mul_choose_eq_mul_choose
+import Theorem.example_separate.two_pow_sub_add_cancel
+import Theorem.example_separate.sum_mul_choose_eq_mul_sub
+import Theorem.example_separate.sum_choose_eq_pow_add'
+import Theorem.example_separate.range_sub_add_cancel
+import Theorem.example_separate.Ico_even_odd
+import Theorem.example_separate.sum_mul_choose_eq_two_pow'
+import Theorem.example_separate.sum_neg_pow_mul_div_mul_div
+import Theorem.example_separate.Ico_pow_choose_eq_pow_add_pow
+import Theorem.example_separate.ico_two_pow
+import Theorem.example_separate.sum_neg_pow_mul_div_succ_congr
+import Theorem.example_separate.prod_Ico_reflect_two
+import Theorem.example_separate.sum_add_div_two
+import Theorem.example_separate.even_choose
+import Theorem.example_separate.choose_eq_choose_sub_add
+import Theorem.example_separate.sum_div_succ_mul_choose
+import Theorem.example_separate.Ico_choose_range_choose
+import Theorem.example_separate.sum_mul_choose_eq_mul_two_pow
+import Theorem.example_separate.mul_add_mul_eq_mul
+import Theorem.example_separate.Transit_item
+import Theorem.example_separate.choose_mul_eq_choose_mul
+import Theorem.example_separate.neg_pow_mul_mul_mul
+import Theorem.example_separate.choose_sub_eq_choose_sub_add
+import Theorem.example_separate.two_mul_add_sub
+import Theorem.example_separate.pred_Ico_choose
+import Theorem.example_separate.mul_choose_sub
+import Theorem.example_separate.choose_le_sum
+import Theorem.example_separate.neg_pow_choose
+import Theorem.example_separate.sum_div_succ_mul_choose_mul
+import Theorem.example_separate.neg_pow_cancel
+import Theorem.example_separate.odd_choose_sum
+import Theorem.example_separate.sum_choose_eq
+import Theorem.example_separate.neg_pow_mul_choose_mul_eq_mul_sub
+
+
+
+
+-- Choose Theorem
+import Mathlib.Data.Nat.Choose.Basic
+import Mathlib.Data.Nat.Choose.Sum
+
+-- Nat Theorem
+import Mathlib.Data.Nat.Cast.Basic
+import Mathlib.Data.Nat.Cast.Commute
+import Mathlib.Data.Nat.Cast.Defs
+import Init.Data.Nat.Basic
+
+-- Real Theorem
+import Mathlib.Algebra.Order.Sub.Canonical
+import Mathlib.Algebra.CharZero.Defs
+import Mathlib.Algebra.Field.Basic
+import Mathlib.Algebra.Group.Basic
+import Mathlib.Algebra.Group.Defs
+import Mathlib.Algebra.GroupPower.Basic
+import Mathlib.Algebra.GroupWithZero.Basic
+import Mathlib.Algebra.GroupWithZero.Units.Lemmas
+import Mathlib.Algebra.Ring.Defs
+
+-- Sum Theorem
+import Mathlib.Algebra.BigOperators.Basic
+import Mathlib.Algebra.BigOperators.Intervals
+import Mathlib.Algebra.BigOperators.Ring
+
+-- Extra Theorem
+import Mathlib.Data.Nat.Interval
+import Mathlib.Order.LocallyFinite
