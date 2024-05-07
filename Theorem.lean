@@ -7,7 +7,6 @@ import Theorem.Basic
 
 import Theorem.Basic
 import Theorem.IDT_1to100.IDT_11to20.idt_18
-import Theorem.IDT_1to100.IDT_11to20.idt_39
 
 
 -- Choose Theorem
